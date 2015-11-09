@@ -8,3 +8,10 @@
 	--->linea 10 a 24
 	--->linea 78 a 91
 		Archivo advanced-access-manager/application/view/tmpl/manager.phtml
+
+3. Poner menus en espanol y ocultar submenus que contienen propaganda:
+	--->linea 936
+		Archivo aam.php (Index)		
+	--->linea 335
+		Archivo extension/AAM_Secure/extension.php
+		

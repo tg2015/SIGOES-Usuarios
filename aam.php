@@ -932,28 +932,32 @@ class aam {
      */
     public function adminMenu() {
         //register the menu
+///////////////////////////////////////////////////SIGOES///////////////////////////////////////////////
+// Registrar menus en espanol        
         add_menu_page(
-                __('AAM', 'aam'),
-                __('AAM', 'aam'),
+                __('SIGOES-Admin-Rol-Usuarios', 'aam'),
+                __('SIGOES-Admin-Rol-Usuarios', 'aam'),
                 aam_Core_ConfigPress::getParam(
                         'aam.page.access_control.capability', 'administrator'
                 ),
                 'aam',
                 array($this, 'content'),
-                AAM_BASE_URL . 'active-menu.png'
+                'dashicons-lock'
         );
         //register submenus
         add_submenu_page(
                 'aam',
-                __('Access Control', 'aam'),
-                __('Access Control', 'aam'),
+                __('Administracion de roles', 'aam'),
+                __('Administracion de roles', 'aam'),
                 aam_Core_ConfigPress::getParam(
                         'aam.page.access_control.capability', 'administrator'
                 ),
                 'aam',
                 array($this, 'content')
         );
-        add_submenu_page(
+///////////////////////////////////////////////////SIGOES///////////////////////////////////////////////
+// Quitar submenus que contienen propaganda        
+       /* add_submenu_page(
                 'aam',
                 __('ConfigPress', 'aam'),
                 __('ConfigPress', 'aam'),
@@ -962,8 +966,8 @@ class aam {
                 ),
                 'aam-configpress',
                 array($this, 'configPressContent')
-        );
-        add_submenu_page(
+        );*/
+        /*add_submenu_page(
                 'aam',
                 __('Extensions', 'aam'),
                 __('Extensions', 'aam'),
@@ -972,7 +976,7 @@ class aam {
                 ),
                 'aam-ext',
                 array($this, 'extensionContent')
-        );
+        );*/
 
     }
 

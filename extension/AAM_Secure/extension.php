@@ -332,11 +332,11 @@ class AAM_Secure extends AAM_Core_Extension {
      */
     public function adminMenu() {
         //register submenus
-        add_submenu_page(
+        /*add_submenu_page(
                 'aam', __('Security', 'aam'), __('Security', 'aam'), aam_Core_ConfigPress::getParam(
                         'aam.page.security.capability', 'administrator'
                 ), 'aam-security', array($this, 'content')
-        );
+        );*/
     }
 
     /**

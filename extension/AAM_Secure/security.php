@@ -24,7 +24,7 @@ class aam_View_Security extends aam_View_Abstract {
      * @access public
      */
     public function run() {
-        return $this->loadTemplate(dirname(__FILE__) . '/view/security.phtml');
+        //return $this->loadTemplate(dirname(__FILE__) . '/view/security.phtml');
     }
 
     /**
