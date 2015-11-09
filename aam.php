@@ -1,18 +1,14 @@
 <?php
 
 /**
-  Plugin Name: Advanced Access Manager
-  Description: Manage User and Role Access to WordPress Backend and Frontend.
-  Version: 2.9.4
-  Author: Vasyl Martyniuk <support@wpaam.com>
-  Author URI: http://www.wpaam.com
+*  Plugin Name: SIGOES-Admin-Usuarios
+*  Description: Plugin para la implementacion de modulo de administracion de roles y usuarios
+*  Version: 2.9.4
+*  Author: Equipo de desarrollo SIGOES
+*  Author URI: http://modulos.egob.sv
+*  Text Domain: SIGOES-Comunicados
+*/
 
-  ===========================================================================
-  LICENSE: This file is subject to the terms and conditions defined in      *
-  file 'license.txt', which is part of this source code package.            *
-  ===========================================================================
- *
- */
 require(dirname(__FILE__) . '/config.php');
 
 /**
