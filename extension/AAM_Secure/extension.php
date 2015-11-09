@@ -331,6 +331,7 @@ class AAM_Secure extends AAM_Core_Extension {
      * @access public
      */
     public function adminMenu() {
+/////////////////////////////////////////////////////////SIGOES//////////////////////////////////////////////        
         //register submenus
         /*add_submenu_page(
                 'aam', __('Security', 'aam'), __('Security', 'aam'), aam_Core_ConfigPress::getParam(

@@ -14,4 +14,8 @@
 		Archivo aam.php (Index)		
 	--->linea 335
 		Archivo extension/AAM_Secure/extension.php
+
+4. Titulo de pagina principal: SIGOES-Administracion Rol-Usuario
+	--->linea 10
+		Archivo application/view/tmpl/manager.phtml
 		
