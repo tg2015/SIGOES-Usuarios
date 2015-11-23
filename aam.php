@@ -942,7 +942,7 @@ class aam {
                 ),
                 'aam',
                 array($this, 'content'),
-                'dashicons-lock'
+                'dashicons-lock', 52
         );
         //register submenus
         add_submenu_page(
