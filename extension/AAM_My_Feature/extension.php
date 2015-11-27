@@ -48,19 +48,7 @@ class AAM_Extension_MyFeature extends AAM_Core_Extension {
         );
 
         if (current_user_can($capability)) {
-            add_action('admin_print_scripts', array($this, 'printScripts'));
-            add_action('admin_print_styles', array($this, 'printStyles'));
-            aam_View_Collection::registerFeature((object)array(
-                'uid' => 'my_feature',
-                'position' => 100,
-                'title' => __('My Feature', 'aam'),
-                'subjects' => array(
-                    aam_Control_Subject_Role::UID,
-                    aam_Control_Subject_User::UID,
-                    aam_Control_Subject_Visitor::UID
-                ),
-                'controller' => $this
-            ));
+            
         }
     }
 

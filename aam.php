@@ -935,8 +935,8 @@ class aam {
 ///////////////////////////////////////////////////SIGOES///////////////////////////////////////////////
 // Registrar menus en espanol        
         add_menu_page(
-                __('Adminastracion Rol-Usuarios', 'aam'),
-                __('Adminastracion Rol-Usuarios', 'aam'),
+                __('Asignar Rol-Usuarios', 'aam'),
+                __('Asignar Rol-Usuarios', 'aam'),
                 aam_Core_ConfigPress::getParam(
                         'aam.page.access_control.capability', 'administrator'
                 ),

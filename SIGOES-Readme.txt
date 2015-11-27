@@ -18,4 +18,9 @@
 4. Titulo de pagina principal: SIGOES-Administracion Rol-Usuario
 	--->linea 10
 		Archivo application/view/tmpl/manager.phtml
-		
+
+5. Ocultar visitors en control manager 
+	---> linea 94
+		Archivo application/view/manager.php
+	--->linea 133
+		Archivo aplication/view/manager.php

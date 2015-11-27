@@ -74,31 +74,23 @@ class aam_View_Manager extends aam_View_Abstract {
             'position' => 5,
             'segment' => aam_Control_Subject_Role::UID,
             'label' => __('Roles', 'aam'),
-            'title' => __('Role Manager', 'aam'),
+            'title' => __('Roles', 'aam'),
             'class' => 'manager-item manager-item-role',
             'uid' => 'role',
             'controller' => 'aam_View_Role'
         ));
 
+        
         aam_View_Collection::registerSubject((object)array(
             'position' => 10,
             'segment' => aam_Control_Subject_User::UID,
-            'label' => __('Users', 'aam'),
-            'title' => __('User Manager', 'aam'),
+            'label' => __('Usuarios', 'aam'),
+            'title' => __('Usuarios', 'aam'),
             'class' => 'manager-item manager-item-user',
             'uid' => 'user',
             'controller' => 'aam_View_User'
         ));
 
-        aam_View_Collection::registerSubject((object)array(
-            'position' => 15,
-            'segment' => aam_Control_Subject_Visitor::UID,
-            'label' => __('Visitor', 'aam'),
-            'title' => __('Visitor Manager', 'aam'),
-            'class' => 'manager-item manager-item-visitor',
-            'uid' => 'visitor',
-            'controller' => 'aam_View_Visitor'
-        ));
     }
 
     /**
@@ -112,67 +104,33 @@ class aam_View_Manager extends aam_View_Abstract {
      */
     protected function registerDefaultFeatures() {
         $features = array();
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////// ** ocultar menus feature aam         
 
         //Main Menu Tab
         aam_View_Collection::registerFeature((object)array(
             'uid' => self::FEATURE_ADMIN_MENU,
             'position' => 5,
-            'title' => __('Admin Menu', 'aam'),
+            'title' => __('Menu Administracion', 'aam'),
             'subjects' => array(
                 aam_Control_Subject_Role::UID, aam_Control_Subject_User::UID
             ),
             'controller' => 'aam_View_Menu'
         ));
 
-
-        //Metaboxes & Widgets Tab
-        aam_View_Collection::registerFeature((object)array(
-            'uid' => self::FEATURE_METABOX,
-            'position' => 10,
-            'title' => __('Metabox & Widget', 'aam'),
-            'subjects' => array(
-                aam_Control_Subject_Role::UID,
-                aam_Control_Subject_User::UID,
-                aam_Control_Subject_Visitor::UID
-            ),
-            'controller' => 'aam_View_Metabox'
-        ));
-
+       
         //Capability Tab
         aam_View_Collection::registerFeature((object)array(
             'uid' => self::FEATURE_CAPABILITY,
             'position' => 15,
-            'title' => __('Capability', 'aam'),
+            'title' => __('Capacidades', 'aam'),
             'subjects' => array(
                 aam_Control_Subject_Role::UID, aam_Control_Subject_User::UID
             ),
             'controller' => 'aam_View_Capability'
         ));
 
-        //Posts & Pages Tab
-        aam_View_Collection::registerFeature((object)array(
-            'uid' => self::FEATURE_POST_ACCESS,
-            'position' => 20,
-            'title' => __('Posts & Pages', 'aam'),
-            'subjects' => array(
-                aam_Control_Subject_Role::UID,
-                aam_Control_Subject_User::UID,
-                aam_Control_Subject_Visitor::UID
-            ),
-            'controller' => 'aam_View_Post'
-        ));
-
-        //Event Manager Tab
-        aam_View_Collection::registerFeature((object)array(
-            'uid' => self::FEATURE_EVENT_MANAGER,
-            'position' => 25,
-            'title' => __('Event Manager', 'aam'),
-            'subjects' => array(
-                aam_Control_Subject_Role::UID, aam_Control_Subject_User::UID
-            ),
-            'controller' =>'aam_View_Event'
-        ));
-
+       
         return $features;
     }
 
@@ -818,16 +776,16 @@ class aam_View_Manager extends aam_View_Abstract {
     public static function uiLabels() {
         return apply_filters('aam_localization_labels', array(
             'Rollback Settings' => __('Rollback Settings', 'aam'),
-            'Cancel' => __('Cancel', 'aam'),
+            'Cancel' => __('Cancelar', 'aam'),
             'Send E-mail' => __('Send E-mail', 'aam'),
-            'Add New Role' => __('Add New Role', 'aam'),
-            'Manage' => __('Manage', 'aam'),
-            'Edit' => __('Edit', 'aam'),
-            'Delete' => __('Delete', 'aam'),
+            'Add New Role' => __('Agregar Nuevo Rol', 'aam'),
+            'Manage' => __('Administrar', 'aam'),
+            'Edit' => __('Editar', 'aam'),
+            'Delete' => __('Eliminar', 'aam'),
             'Filtered' => __('Filtered', 'aam'),
             'Clear' => __('Clear', 'aam'),
-            'Add New Role' => __('Add New Role', 'aam'),
-            'Save Changes' => __('Save Changes', 'aam'),
+            'Add New Role' => __('Agregar Nuevo Rol', 'aam'),
+            'Save Changes' => __('Guardar Cambios', 'aam'),
             'Delete Role with Users Message' => __('System detected %d user(s) with this role. All Users with Role <b>%s</b> will be deleted automatically!', 'aam'),
             'Delete Role Message' => __('Are you sure that you want to delete role <b>%s</b>?', 'aam'),
             'Delete Role' => __('Delete Role', 'aam'),

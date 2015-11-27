@@ -66,15 +66,7 @@ class AAM_Extension_ActivityLog extends AAM_Core_Extension {
                     'aam_localization_labels', array($this, 'localizationLabels')
             );
 
-            aam_View_Collection::registerFeature((object)array(
-                'uid' => 'activity_log',
-                'position' => 35,
-                'title' => __('Activity Log', 'aam'),
-                'subjects' => array(
-                    aam_Control_Subject_Role::UID, aam_Control_Subject_User::UID
-                ),
-                'controller' => $this
-            ));
+            
         }
     }
 
