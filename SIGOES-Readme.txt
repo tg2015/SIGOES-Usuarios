@@ -24,3 +24,11 @@
 		Archivo application/view/manager.php
 	--->linea 133
 		Archivo aplication/view/manager.php
+
+6. botones español roleback y save (restaurar y guardar (Panel de control))		
+	--->linea 284
+		Archivo media/js/aam.js
+
+7. menu capacidades en español 
+	---> liena 102
+		Archivo application/view/capability.php

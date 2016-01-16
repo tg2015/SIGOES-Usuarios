@@ -281,7 +281,8 @@ AAM.prototype.enableRoleback = function(){
 AAM.prototype.initControlPanel = function() {
     var _this = this;
     //Role Back feature
-    var roleback = this.createIcon('large', 'roleback').append('Roleback').bind('click', function(event) {
+///////////////////////////////////////////////////////////////// español icon /*//////////////////////////////////////////    
+    var roleback = this.createIcon('large', 'roleback').append('Restaurar').bind('click', function(event) {
         event.preventDefault();
         if (!jQuery(this).hasClass('cpanel-item-disabled')){
             var buttons = {};
@@ -322,7 +323,8 @@ AAM.prototype.initControlPanel = function() {
     jQuery('#cpanel_major').append(roleback);
 
     //Save the AAM settings
-     var save = this.createIcon('large', 'save').append('Save').bind('click', function(event) {
+///////////////////////////////////////////////////////español icon /////////////////////////////////////////////////////    
+     var save = this.createIcon('large', 'save').append('Guaradar').bind('click', function(event) {
         event.preventDefault();
         _this.showMetaboxLoader('#control_panel');
 

@@ -67,7 +67,8 @@ class aam_View_Capability extends aam_View_Abstract {
             //init all caps
             foreach ($caps as $capability => $grant) {
                 $response['aaData'][] = array(
-                    $capability,
+                    $capability
+                    ,
                     ($subject->hasCapability($capability) ? 1 : 0),
                     $this->getGroup($capability),
                     $this->getHumanText($capability),
@@ -98,10 +99,10 @@ class aam_View_Capability extends aam_View_Abstract {
      */
     public function getGroupList(){
         return apply_filters('aam_capability_groups', array(
-            __('System', 'aam'),
-            __('Post & Page', 'aam'),
-            __('Backend Interface', 'aam'),
-            __('Miscellaneous', 'aam')
+            __('Sistema', 'aam'),
+            __('Publicaciones y Paginas', 'aam'),
+            __('Interface', 'aam'),
+            __('Miscelaneos', 'aam')
         ));
     }
 
@@ -202,13 +203,13 @@ class aam_View_Capability extends aam_View_Abstract {
      */
     protected function getGroup($capability) {
         if (in_array($capability, $this->_groups['system'])) {
-            $response = __('System', 'aam');
+            $response = __('Sistema', 'aam');
         } elseif (in_array($capability, $this->_groups['post'])) {
-            $response = __('Post & Page', 'aam');
+            $response = __('Publicaciones y Paginas', 'aam');
         } elseif (in_array($capability, $this->_groups['backend'])) {
-            $response = __('Backend Interface', 'aam');
+            $response = __('Interface', 'aam');
         } else {
-            $response = __('Miscellaneous', 'aam');
+            $response = __('Miscelaneos', 'aam');
         }
 
         return apply_filters('aam_capability_group', $response, $capability);
