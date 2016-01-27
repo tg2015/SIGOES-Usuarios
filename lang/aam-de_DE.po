@@ -251,7 +251,7 @@ msgid "Inherit Capabilities"
 msgstr "Vererbe Eigenschaften"
 
 #: application/view/manager.php:363
-msgid "Add New Capability"
+msgid "Agregar Nueva Capacidad"
 msgstr "Neue Eigenschaft hinzufügen"
 
 #: application/view/manager.php:364
