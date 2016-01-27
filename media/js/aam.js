@@ -324,7 +324,7 @@ AAM.prototype.initControlPanel = function() {
 
     //Save the AAM settings
 ///////////////////////////////////////////////////////español icon /////////////////////////////////////////////////////    
-     var save = this.createIcon('large', 'save').append('Guaradar').bind('click', function(event) {
+     var save = this.createIcon('large', 'save').append('Guardar').bind('click', function(event) {
         event.preventDefault();
         _this.showMetaboxLoader('#control_panel');
 
